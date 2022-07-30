@@ -317,16 +317,38 @@ h2, h3{
         row-gap: 1.5rem;
      }
      .copyright{
-        grid-column: 1/7;
+        grid-column: 1/6;
         text-align: center;
      }
 .link7{
     grid-row: 3;
     text-align: center;
-    grid-column:1/7
+    grid-column:1/6
 }
 .link1{
-    margin-left:2em
+    margin-left:1em;
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+.link2{
+    grid-column: 2/3;
+    grid-row: 2/2;
+}
+.link3{
+    grid-column: 3/4;
+    grid-row: 2/2;
+}
+.link4{
+    grid-column: 4/5;
+    grid-row: 2/2;
+}
+.link5{
+    grid-column: 5/6;
+    grid-row: 2/2;
+}
+.link6{
+    grid-column: 6/7;
+    grid-row: 2/2;
 }
 }
 #mySidenav{
