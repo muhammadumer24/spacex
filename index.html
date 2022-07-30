@@ -78,34 +78,45 @@
           <li class="display-none">
             <a href="https://shop.spacex.com/" class="upper-case D-Din animation shop-text">Shop</a>
           </li>
-            <li>
-              <div id="mySidenav" class="sidenav">
-                <nav>
-                  <ul>
-                    <a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()">&times;</a></li>
-                <li><a href="https://www.spacex.com/vehicles/falcon-9/" class="myLinks D-Din-Regular upper-case display-visible" id="none">Falcon 9</a></li>
-                <li><a href="https://www.spacex.com/vehicles/falcon-heavy/" class="myLinks D-Din-Regular upper-case display-visible" id="none">Falcon Heavy</a></li>
-                <li><a href="https://www.spacex.com/vehicles/dragon/" class="myLinks D-Din-Regular upper-case display-visible" id="none">Dragon</a></li>
-                <li><a href="https://www.spacex.com/vehicles/starship/" class="myLinks D-Din-Regular upper-case display-visible" id="none">starship</a></li>
-                <li><a href="https://www.spacex.com/human-spaceflight/" class="myLinks D-Din-Regular upper-case display-visible" id="none">Human Spaceflight</a></li>
-                <li><a href="https://www.spacex.com/rideshare/" class="myLinks D-Din-Regular upper-case display-visible" id="none">Rideshare</a></li>
-                <li><a href="https://www.starlink.com/" class="myLinks D-Din-Regular upper-case display-visible" id="none">Starlink</a></li>
-                <li><a href="https://www.spacex.com/mission/" class="myLinks D-Din-Regular upper-case">mission</a></li>
-                <li><a href="https://www.spacex.com/launches/" class="myLinks D-Din-Regular upper-case">launches</a></li>
-                <li><a href="https://www.spacex.com/careers/" class="myLinks D-Din-Regular upper-case">careers</a></li>
-                <li><a href="https://www.spacex.com/updates/" class="myLinks D-Din-Regular upper-case">updates</a></li>
-                <li><a href="https://shop.spacex.com/" class="myLinks D-Din-Regular upper-case">shop</a></li>
-                  </ul>
-                </nav>
+          <li>
+            <div id="mySidenav" class="sidenav">
+              <nav>
+                <ul>
+                  <li><a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()">&times;</a></li>
+                  <li><a href="https://www.spacex.com/vehicles/falcon-9/"
+                      class="myLinks D-Din-Regular upper-case display-visible" id="none">Falcon 9</a></li>
+                  <li><a href="https://www.spacex.com/vehicles/falcon-heavy/"
+                      class="myLinks D-Din-Regular upper-case display-visible" id="none">Falcon Heavy</a></li>
+                  <li><a href="https://www.spacex.com/vehicles/dragon/"
+                      class="myLinks D-Din-Regular upper-case display-visible" id="none">Dragon</a></li>
+                  <li><a href="https://www.spacex.com/vehicles/starship/"
+                      class="myLinks D-Din-Regular upper-case display-visible" id="none">starship</a></li>
+                  <li><a href="https://www.spacex.com/human-spaceflight/"
+                      class="myLinks D-Din-Regular upper-case display-visible" id="none">Human Spaceflight</a></li>
+                  <li><a href="https://www.spacex.com/rideshare/"
+                      class="myLinks D-Din-Regular upper-case display-visible" id="none">Rideshare</a></li>
+                  <li><a href="https://www.starlink.com/" class="myLinks D-Din-Regular upper-case display-visible"
+                      id="none">Starlink</a></li>
+                  <li id="mission"><a href="https://www.spacex.com/mission/"
+                      class="myLinks D-Din-Regular upper-case">mission</a></li>
+                  <li><a href="https://www.spacex.com/launches/" class="myLinks D-Din-Regular upper-case">launches</a>
+                  </li>
+                  <li><a href="https://www.spacex.com/careers/" class="myLinks D-Din-Regular upper-case">careers</a>
+                  </li>
+                  <li><a href="https://www.spacex.com/updates/" class="myLinks D-Din-Regular upper-case">updates</a>
+                  </li>
+                  <li><a href="https://shop.spacex.com/" class="myLinks D-Din-Regular upper-case">shop</a></li>
+                </ul>
+              </nav>
+            </div>
+            <span style="font-size:30px" onclick="openNav()">
+              <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
               </div>
-              <span style="font-size:30px" onclick="openNav()">
-                <div class="menu-icon">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                </div>
-              </span>
-            </li>
+            </span>
+          </li>
           </a>
         </ul>
       </nav>
@@ -177,17 +188,18 @@
 </script>
 <script type="text/javascript">
   var lastScrollTop = 0;
-     navbar = document.getElementById("header");
-  window.addEventListener("scroll", function(){
+  navbar = document.getElementById("header");
+  window.addEventListener("scroll", function () {
     var scrollTop = window.pageYOffset || document
       .documentElement.scrollTop;
-    if (scrollTop > lastScrollTop){
-      navbar.style.top="-20%";
+    if (scrollTop > lastScrollTop) {
+      navbar.style.top = "-20%";
     }
     else {
-      navbar.style.top="0";
+      navbar.style.top = "0";
     }
     lastScrollTop = scrollTop;
   })
 </script>
+
 </html>
