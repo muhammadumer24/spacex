@@ -54,7 +54,7 @@
         <li class="display-none">
           <a href="https://www.spacex.com/vehicles/falcon-9/" class="animation">Falcon 9</a>
         </li>
-        <li>
+        <li class="display-none">
           <a href="https://www.spacex.com/vehicles/falcon-heavy/" class="animation">Falcon Heavy</a>
         </li>
         <li class="display-none">
@@ -126,20 +126,20 @@
     <div class="section1-text">
       <h2 class="rocket-launch upper-case D-Din">recent launch</h2>
       <h3 class="rocket-font D-Din upper-case">crs-25 mission</h3>
-      <a onclick="quiz()" class="D-Din upper-case btn">rewatch</a>
+      <a href="#" class="D-Din upper-case btn">rewatch</a>
     </div>
   </section>
   <section class="second-section background-image">
     <div class="section1-text">
       <h2 class="rocket-launch upper-case D-Din">recent launch</h2>
       <h3 class="rocket-font D-Din upper-case">starlink mission</h3>
-      <a onclick="quiz()" class="D-Din upper-case btn">rewatch</a>
+      <a href="#" class="D-Din upper-case btn">rewatch</a>
     </div>
   </section>
   <section class="third-section background-image">
     <div class="section1-text">
       <h3 class="rocket-font D-Din upper-case">starship update</h3>
-      <a onclick="quiz()" class="D-Din upper-case btn">Learn more</a>
+      <a href="#" class="D-Din upper-case btn">Learn more</a>
     </div>
   </section>
   <section class="forth-section background-image">
@@ -147,7 +147,7 @@
       <h3 class="rocket-font D-Din upper-case text-wrap">
         starship to land nasa astronauts on the moon
       </h3>
-      <a onclick="quiz()" class="D-Din upper-case btn">Learn more</a>
+      <a href="#" class="D-Din upper-case btn">Learn more</a>
     </div>
   </section>
   <footer>
@@ -189,37 +189,37 @@
   //ends here
 
   //generating random number
-  function generateRandomIntegerInRange(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-  let value = generateRandomIntegerInRange(100, 90000);
-  //ends here
+//   function generateRandomIntegerInRange(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+//   }
+//   let value = generateRandomIntegerInRange(100, 90000);
+//   //ends here
 
-  //this is the seires of question that we wil gonna ask
-  function quiz() {
-    let text="Answer"
-    const obj = {
-      question1: Number(prompt('How many Stars are there in our solar system?', text)),
-      question2: Number(prompt('How many Moon does Mars have?', text)),
-      question3: Number(prompt('How many Moons do we have?', text)),
-      question4:Number(prompt("How many planets do our solar system have?", text))
-    };
-    if ( (obj.question2===2) && (obj.question3===1) && (obj.question1===1) && (obj.question4===8)){
-    var oldVal = 'Name';
-    var name = prompt("Write your name:", oldVal)
-    if (name === "") { }
-    else if (name == oldVal) { }
-    else if (name) {
-      alert("Congrats " + name + "!!! You just won " + value + "$ 🎉 🥳")
-    }
-    else {
-      alert("You just missed the golden chance to become a billionaire 😮")
-    }
-  }
-  else{
-    alert("Sorry but either one of your answer was incorrect 😕")
-  }
-}
+//   //this is the seires of question that we wil gonna ask
+//   function quiz() {
+//     let text="Answer"
+//     const obj = {
+//       question1: Number(prompt('How many Stars are there in our solar system?', text)),
+//       question2: Number(prompt('How many Moon does Mars have?', text)),
+//       question3: Number(prompt('How many Moons do we have?', text)),
+//       question4:Number(prompt("How many planets do our solar system have?", text))
+//     };
+//     if ( (obj.question2===2) && (obj.question3===1) && (obj.question1===1) && (obj.question4===8)){
+//     var oldVal = 'Name';
+//     var name = prompt("Write your name:", oldVal)
+//     if (name === "") { }
+//     else if (name == oldVal) { }
+//     else if (name) {
+//       alert("Congrats " + name + "!!! You just won " + value + "$ 🎉 🥳")
+//     }
+//     else {
+//       alert("You just missed the golden chance to become a billionaire 😮")
+//     }
+//   }
+//   else{
+//     alert("Sorry but either one of your answer was incorrect 😕")
+//   }
+// }
 
 
 </script>

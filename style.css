@@ -412,8 +412,9 @@ max-width:300px}
 }
 
 @media (max-width:1000px){
-    .last-section-margin{
-    min-width:100vw
+    .text-wrap{
+        width:100%;
+        font-size: 5rem;
     }
     .background-image{
     background-size:auto 100%;
@@ -427,7 +428,7 @@ max-width:300px}
 }
 @media (max-width:600px){
     .last-section-margin{
-        top:25%
+        top:25%;
     }
      .footer-ul{
         grid-template-columns: auto auto auto auto auto auto;
